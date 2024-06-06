@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { faEye, faEyeSlash, faShield } from '@fortawesome/free-solid-svg-icons';
 import { handleSignUP } from '../../helpers/handle-signup';
 import { useNavigate } from 'react-router-dom';
+import image from '../../assets/img/image.png';
 
 const cx = classNames.bind(styles);
 
@@ -66,10 +67,13 @@ function SignUpPage() {
                 <div className={cx('form-header')}>
                     <img
                         className={cx('form-header__logo')}
-                        src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1"
+                        src={image}
                         alt="..."
+                        style={{ height: '80px', width: '80px' }}
                     ></img>
-                    <h2 className={cx('form-header__title')}>Chào mừng bạn đến với BestCV</h2>
+                    <h4 className={cx('form-header__title')} style={{ color: '#0b99ff' }}>
+                        Chào mừng bạn đến với BestCV
+                    </h4>
                     <div className={cx('form-header__caption')}>
                         Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng
                     </div>
@@ -166,14 +170,14 @@ function SignUpPage() {
                                 </a>
                                 <span> của chúng tôi</span>
                             </div>
-                            <button className={cx('form-login__input-group__button')}>Đăng kí</button>
+                            <button className={cx('form-login__input-group__button')}>Đăng ký</button>
                         </div>
                     </form>
                 </div>
 
                 <div className={cx('form-auth')}>
                     <div>
-                        <span>Bạn đã có tài khoản?</span>
+                        <span>Bạn đã có tài khoản? </span>
                         <a href="https://topcv-clone.netlify.app/login" className={cx('form-auth__signup')}>
                             Đăng nhập ngay
                         </a>

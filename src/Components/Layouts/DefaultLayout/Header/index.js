@@ -26,6 +26,10 @@ function Header() {
         navigate('/user');
     }
 
+    function handleSignUpUserBtn() {
+        navigate('/sign-up');
+    }
+
     function handleLogoutBtn() {
         setAuth({});
         localStorage.removeItem('token');
@@ -88,13 +92,20 @@ function Header() {
                                 </button>
                             </li>
                             <li className={cx('navbar-right__item')}>
-                                <a
+                                {/* <a
                                     href="https://topcv-clone.netlify.app/sign-up"
                                     type="button"
                                     className={cx('navbar-right__item-buttonPrimary')}
                                 >
                                     Đăng ký
-                                </a>
+                                </a> */}
+                                <button
+                                    onClick={handleSignUpUserBtn}
+                                    type="button"
+                                    className={cx('navbar-right__item-buttonPrimary')}
+                                >
+                                    Đăng ký
+                                </button>
                             </li>
                         </>
                     )}
