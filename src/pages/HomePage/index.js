@@ -348,7 +348,7 @@ function HomePage() {
                         }}
                     >
                         <FontAwesomeIcon icon={faAnglesLeft} />
-                        <span>Trang trước</span>
+                        {/* <span>Trang trước</span> */}
                     </button>
                     <button
                         className={cx('pagination-container__btn')}
@@ -358,7 +358,7 @@ function HomePage() {
                             }
                         }}
                     >
-                        <span>Trang sau</span>
+                        {/* <span>Trang sau</span> */}
                         <FontAwesomeIcon icon={faAnglesRight} />
                     </button>
                 </div>
